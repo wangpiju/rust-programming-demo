@@ -1,12 +1,6 @@
+// 引入 web.rs 模块
 mod web;
-
 fn main() {
-    println!("Hello, world!");
-    let money = "1";
-    match money{
-        "1" => print!("1"),
-        _ => {print!("0")}
-    }
-
+    println!("Jess Demo!");
+    web::run();
 }
-
