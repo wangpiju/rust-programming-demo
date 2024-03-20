@@ -8,6 +8,6 @@ mod command_line_parameters;
 
 fn main() {
     println!("Jess Demo!");
-    web::run();
-    println!("{:?}", escape_time::escape_time(Complex::new(3.00, 2.00), 5).unwrap());
+    // web::run();
+    // println!("{:?}", escape_time::escape_time(Complex::new(3.00, 2.00), 5).unwrap());
 }
