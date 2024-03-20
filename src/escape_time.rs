@@ -9,9 +9,9 @@ use num::complex::Complex;
 /// return `None`.
 ///
 
-fn main(){
-    escape_time(Complex::new(2.00, 0.00), 10);
-}
+// fn main(){
+//     escape_time(Complex::new(2.00, 0.00), 10);
+// }
 pub fn escape_time(c: Complex<f64>, limit: usize) -> Option<usize> {
     let mut z = Complex { re: 0.0, im: 0.0 };
 
