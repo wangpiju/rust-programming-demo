@@ -9,7 +9,7 @@ use num_complex::Complex;
 /// ASCII character.
 ///
 /// If `s` has the proper form, return `Some<(x, y)>`. If it doesn't parse correctly, return `None`.
-fn parse_pair<T: FromStr>(s: &str, separator: char) -> Option<(T, T)> {
+pub fn parse_pair<T: FromStr>(s: &str, separator: char) -> Option<(T, T)> {
     match s.find(separator) {
         None => None,
         Some(index) => {
@@ -22,7 +22,7 @@ fn parse_pair<T: FromStr>(s: &str, separator: char) -> Option<(T, T)> {
 }
 
 /// Parse a pair of floating-point numbers separated by a comma as a complex number.
-fn parse_complex(s: &str) -> Option<Complex<f64>> {
+pub fn parse_complex(s: &str) -> Option<Complex<f64>> {
     match parse_pair(s, ',') {
         Some((re, im)) => Some(Complex { re, im }),
         None => None
